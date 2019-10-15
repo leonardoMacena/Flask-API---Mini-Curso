@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = get_database_uri_value()
 db = SQLAlchemy(app)
 
 from app.utils.create_db import init_db
-#init_db()
+init_db()
 
 from .routes.user_route import bp_users
 from .routes.contact_route import bp_contact

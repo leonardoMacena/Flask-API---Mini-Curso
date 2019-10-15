@@ -14,8 +14,7 @@ def get_user (user_id):
   return jsonify(controller.content), controller.status
 
 @bp_users.route('', methods=['POST'])
-def create_user (user_id):
-  print(test, 'deu certo')
+def create_user ():
   data = request.get_json()
   controller = UserController()
   controller.save(data)

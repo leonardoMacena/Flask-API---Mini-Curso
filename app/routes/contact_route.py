@@ -7,7 +7,6 @@ bp_contact = Blueprint('bp_contact', __name__)
 @bp_contact.route('/<user_id>', methods=['GET'])
 def get_user (user_id):
   controller = ContactController()
-  ip_address = request.remote_addr
   controller.get(user_id)
   return jsonify(controller.content), controller.status
 

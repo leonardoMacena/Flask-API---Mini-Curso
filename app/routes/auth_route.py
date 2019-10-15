@@ -14,7 +14,7 @@ def get_user (user_id):
 @bp_auth.route('/login', methods=['POST'])
 def create_user ():
   data = request.get_json()
-  print(data)
+  ip_address = request.remote_addr
   controller = AuthController()
-  controller.login(data)
+  controller.login(data, ip_address)
   return jsonify(controller.content), controller.status
