@@ -14,6 +14,4 @@ def get_jwt_key():
   return get_property_value('jwt_key')
 
 def get_jwt_lifetime_value():
-  return et_property_value('jwt_lifetime')
-
-
+  return get_property_value('jwt_lifetime')

@@ -5,6 +5,6 @@ def encrypt (pwd):
   hashed = bcrypt.hashpw(str.encode(pwd), salt)
   return hashed.decode()
 
-def validete(pwd, encryptPwd):
+def validete (pwd, encryptPwd):
     result = bcrypt.checkpw(str.encode(pwd), str.encode(encryptPwd))
     return result

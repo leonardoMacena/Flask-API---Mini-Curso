@@ -43,11 +43,11 @@ USER = {
 }
 
 AUTH = {
-  'LOGIN': {
-    'NO_REGISTER':'email not registered',
-    'NOT_FOUND':'email not found',
-    'WRONG_PASSWORD':'wrong password'
+  'LOGIN': 'email or password wrong',
+  'TOKEN':{
+    'NOT_AUTH':'not authorized',
+    'INVALID_TOKEN':'invalid token',
+    'NOT_FOUND': 'token not found',
+    'TIMEOUT':'token timeout'
   },
-  'NOT_AUTH':'not authorized',
-  'INVALID_TOKEN':'invalid token',
 }
